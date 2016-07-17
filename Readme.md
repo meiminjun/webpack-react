@@ -1,4 +1,4 @@
-# webpack+redux+es6 纯净版本
+# webpack+react+es6 纯净版本
 
 这个例子是一个master 版本，后期开发dev 分支版本
 
