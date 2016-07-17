@@ -1,4 +1,4 @@
-# webpack+react+redux+es6 开发
+# webpack+react+redux+es6 开发版本
 
 到当前目录命令行：npm install   下载依赖包
 
