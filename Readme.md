@@ -5,3 +5,7 @@
 windows 开发环境运行: npm run start-win  
 
 mac 开发环境运行:npm run start
+
+参考资料：
+
+* http://cn.redux.js.org/docs/basics/UsageWithReact.html
