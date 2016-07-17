@@ -1,15 +1,17 @@
-import React from 'react';
-class Headinfo extends React.Component {
+import React, {PropTypes, Component} from 'react';
+
+class Headinfo extends Component {
       constructor(props) {
         super(props);
       }
       render(){
+        const {name} = this.props;
         return (
           <div>
           <div className="head_info" >
             <div className="mian_pic"></div>
             <div className="main_name">
-              <div >{this.props.name}</div>
+              <div >{name}</div>
               <div className="imperial_crown">
                 <span className="family_purple">明星麻豆</span>
               </div>
@@ -18,7 +20,9 @@ class Headinfo extends React.Component {
           </div>
           </div>
           );
-      }
-    }
-
+     }
+}
+Headinfo.propTypes = {
+  name:PropTypes.string.isRequired
+};
 export default Headinfo;

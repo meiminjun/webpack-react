@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class Bottominfo extends React.Component {
+class Bottominfo extends Component {
       render(){
         return(
             <div>

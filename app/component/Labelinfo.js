@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-export default class Labelinfo extends React.Component {
+class Labelinfo extends Component {
       render(){
         return(
             <div className="label_info">
@@ -13,4 +13,4 @@ export default class Labelinfo extends React.Component {
       }
     }
 
-// export default Labelinfo;
+export default Labelinfo;
