@@ -1,0 +1,22 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./bg.png) no-repeat 50%/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: rgba(41, 58, 64, 0.82);
+    font-size: 19px;
+  }
+  p {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+  }
+}

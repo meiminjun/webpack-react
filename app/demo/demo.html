@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>demo2</title>
+	<link rel="stylesheet" href="test.css" type="text/css" />
+	<script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+</head>
+<body>
+	<div id="example"></div>
+	<script type="text/babel">
+
+	var data = [
+	  {name:"张文娟",text: "换新设计，内外兼修才够美~~穿出独属于你自己的腔调"},
+	  {name:"李梅",text: "内衣，情趣，呵呵呵呵呵"},
+	  {name:"王月月",text: "内在美才是真的美"}
+	];
+
+	var Headinfo = React.createClass({
+			render:function(){
+				return (
+					<div>
+					<div className="head_info" >
+						<div className="mian_pic"></div>
+						<div className="main_name">
+							<div >{this.props.name}</div>
+							<div className="imperial_crown">
+								<span className="family_purple">明星麻豆</span>
+							</div>
+						</div>
+						<div className="main_btn">找ta拍</div>
+					</div>
+					</div>
+					);
+			}
+		});
+		var Labelinfo = React.createClass({
+			render:function(){
+				return(
+						<div className="label_info">
+							<div className="label_content">宁波</div>
+							<div className="label_content">复古</div>
+							<div className="label_content">写真</div>
+							<div className="label_content2">竹林外景</div>
+						</div>
+				)
+			}
+		});
+
+		var Publicationinfo = React.createClass({
+			render:function(){
+				return(
+						<div>
+							<div className="publication_info">{this.props.text}
+							</div>
+							<div className="showPic"></div>
+						</div>
+				)
+			}
+		});
+		var Bottominfo = React.createClass({
+			render:function(){
+				return(
+						<div>
+							<div className="bottom_info">
+								<div className="bottom_1 bottom_content"></div>
+								<div className="bottom_2 bottom_content"></div>
+								<div className="bottom_3 bottom_content">45</div>
+
+							</div>
+							<div className="line"></div>
+						</div>
+				)
+			}
+		});
+
+		var Bottomabsolution = React.createClass({
+			render:function(){
+				return(
+					<div>
+						<div className="bottom_absolution">
+							<div className="ba_left">在云麻豆中打开</div>
+							<div className="ba_right">找ta拍</div>
+						</div>
+					</div>
+
+				)
+			}
+		});
+
+		var CommentList = React.createClass({
+		  render: function() {
+		    var commentNodes = this.props.data.map(function (comment) {
+		      return (
+		      	<div>
+			      	<Headinfo name={comment.name} />
+			      	<Labelinfo />
+			      	<Publicationinfo text={comment.text} />
+			      	<Bottominfo />
+			      	<Bottomabsolution />
+		      	</div>
+		      );
+		    });
+		    return (
+		      <div>
+		        {commentNodes}
+		      </div>
+		    );
+		  }
+		});
+
+
+		ReactDOM.render(
+		 <div >
+			<CommentList data = {data} />
+		 </div>,
+		document.getElementById('example')
+		);
+	</script>
+
+</body>
+</html>

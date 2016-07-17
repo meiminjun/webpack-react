@@ -1,0 +1,163 @@
+@charset "UTF-8";
+body{
+	margin:0;
+	padding:0;
+	border:none;
+	font-size:14px;
+}
+
+.head_info {
+  height:6rem;
+  .mian_pic {
+      width: 4rem;
+      height: 4rem;
+      background: url("images/girlthree.jpg") no-repeat;
+      background-size: 4rem 4rem;
+      border-radius: 1.9rem;
+      margin: 1rem;
+      float:left;
+  }
+  .main_name{
+    float:left;
+    width:4rem;
+    height: 2rem;
+    padding-top:2rem;
+    .imperial_crown{
+            width: 4rem;
+            height: 2rem;
+            background: url("images/huangguan.jpg") no-repeat;
+            background-size: 2rem 2rem;
+            padding-left: 2rem;
+            .family_purple{
+            color: purple;
+              width: 3rem;
+              height: 2rem;
+              line-height: 2rem;
+          }
+      }
+  }
+  .main_btn{
+  float: right;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.9rem;
+    background-color: red;
+    color: white;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+  }
+}
+
+
+
+
+.label_info{
+	height: 2.5rem;
+    .label_content{
+      width: 3rem;
+      height: 1.5rem;
+      border-radius: 0.9rem;
+        border:1px solid #999;
+        color: #999;
+        line-height: 1.5rem;
+        text-align: center;
+        float:left;
+        margin-left:0.5rem;
+    }
+    .label_content2{
+        width: 5rem;
+        height: 1.5rem;
+        border-radius: 0.9rem;
+          border:1px solid #999;
+          color: #999;
+          line-height: 1.5rem;
+          text-align: center;
+          float:left;
+          margin-left:0.5rem;
+      }
+}
+
+
+.publication_info{
+    height: 3rem;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+
+}
+
+.showPic{
+      width: 100%;
+      height: 26rem;
+      background: url("images/girlone.jpg") no-repeat;
+      background-size: 100% 26rem;
+}
+
+.bottom_content{
+  width: 2rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+    margin-top:1rem;
+    border-radius: 1rem;
+    float: left;
+  }
+
+.bottom_info{
+	height: 4rem;
+      .bottom_1{
+          background: url("images/girlone.jpg") no-repeat;
+          background-size: 2rem 2rem;
+          @extend .bottom_content;
+    }
+    .bottom_2{
+        background: url("images/girltwo.jpg") no-repeat;
+          background-size: 2rem 2rem;
+           @extend .bottom_content;
+    }
+    .bottom_3{
+          background-color: #999;
+          color:black;
+          line-height: 2rem;
+          text-align: center;
+           @extend .bottom_content;
+    }
+    .line{
+        height: 0.7rem;
+          background-color: rgba(153, 153, 153, 0.11);
+          margin: 1.5rem 0;
+      }
+}
+
+
+
+
+/*固定底部不动*/
+.bottom_absolution{
+	height: 3.56rem;
+    width: 100%;
+    background: #b3afab;
+    position: relative;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+    .ba_left{
+          height: 3.56rem;
+          float:left;
+          width: 49.5%;
+          background-color:white;
+          color:black;
+          line-height: 3.56rem;
+          text-align: center;
+
+      }
+    .ba_right{
+        height: 3.56rem;
+        float:left;
+        width: 50%;
+        background-color:red;
+        color:white;
+        line-height: 3.56rem;
+        text-align: center;
+      }
+}
