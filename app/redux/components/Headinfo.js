@@ -16,7 +16,7 @@ class Headinfo extends Component {
                 <span className="family_purple">明星麻豆</span>
               </div>
             </div>
-            <div className="main_btn" onClick = {showData}>找ta拍</div>
+            <div className="main_btn" onClick={showData}>找ta拍</div>
           </div>
           </div>
           );

@@ -1,8 +1,8 @@
-var webpack = require('webpack');
-var webpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config.dev.js');
-var compiler = webpack(config);
-var server = new webpackDevServer(compiler, {
+const webpack = require('webpack');
+const webpackDevServer = require('webpack-dev-server');
+const config = require('./webpack.config.dev.js');
+const compiler = webpack(config);
+const server = new webpackDevServer(compiler, {
 	historyApiFallback: true,
 	hot: true,
 	inline: true,
