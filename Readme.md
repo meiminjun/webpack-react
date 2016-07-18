@@ -7,9 +7,14 @@ windows 开发环境运行: npm run start-win
 mac 开发环境运行:npm run start
 
 
-## 添加redux-tool:
+## 添加redux-devtool:
+
+这个插件可以对redux 的state、action可视化查看
+
+详情请参考：
 
 https://github.com/gaearon/redux-devtools
+
 
 ## 添加sublime 对es-6的语法检测
 
