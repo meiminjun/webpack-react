@@ -1,9 +1,6 @@
 import React, {PropTypes, Component} from 'react';
 
 class Headinfo extends Component {
-      constructor(props) {
-        super(props);
-      }
       render(){
         const {name,showData} = this.props;
         return (
@@ -16,10 +13,9 @@ class Headinfo extends Component {
                 <span className="family_purple">明星麻豆</span>
               </div>
             </div>
-            <div className="main_btn" onClick={showData}>找ta拍</div>
+            <div onClick={showData}  className="main_btn" >找ta拍</div>
           </div>
-          </div>
-          );
+          </div>);
      }
 }
 Headinfo.propTypes = {

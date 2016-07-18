@@ -7,15 +7,13 @@ import Bottominfo from './Bottominfo.js';
 import Bottomabsolution from './Bottomabsolution.js';
 
 class ListDemo extends React.Component {
-      constructor(props) {
-        super(props);
-      }
+
       render(){
-            const {data} = this.props;
+            const {data,showData} = this.props;
             const commentNodes = data.map(function (comment,index) {
                   return (
                       <div key={'common-'+index} >
-                        <Headinfo name={comment.name} />
+                        <Headinfo name={comment.name} showData={showData}  />
                         <Labelinfo />
                         <Publicationinfo text={comment.text} />
                         <Bottominfo />
@@ -32,7 +30,8 @@ class ListDemo extends React.Component {
 }
 
 ListDemo.propTypes = {
-  data: React.PropTypes.array.isRequired
+  data: React.PropTypes.array.isRequired,
+  showData:React.PropTypes.func.isRequired
 };
 
 export default ListDemo;

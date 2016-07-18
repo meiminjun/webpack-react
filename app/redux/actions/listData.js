@@ -3,18 +3,15 @@ export const LIST_DATA = 'LIST_DATA';
 
 export function add() {
   return {
-    type:SHOW_DATA
+    type:SHOW_DATA,
+    text:"test"
   };
 }
 
 // 显示数据
 export function showData() {
-  return (dispatch,getState) => {
-    const {name} = getState();
-    console.log("--------------------"+name);
-    if(name !== "") {
-      dispatch(add());
-    }
+  return {
+    type:SHOW_DATA
   };
 }
 
