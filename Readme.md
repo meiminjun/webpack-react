@@ -15,6 +15,18 @@ mac 开发环境运行:npm run start
 
 https://github.com/gaearon/redux-devtools
 
+## 添加[cross-env](https://www.npmjs.com/package/cross-env)
+
+> npm install -s cross-env
+
+这个包是在package.json 中用来切换环境的
+```
+{
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
+  }
+}
+```
 
 ## 添加sublime 对es-6的语法检测
 
@@ -42,3 +54,8 @@ https://github.com/roadhump/SublimeLinter-eslint
 * http://www.alloyteam.com/2015/09/react-redux/
 
 * http://cn.redux.js.org/docs/basics/UsageWithReact.html
+
+
+## 学习进程：
+* 2016-07-18：已整合好redux
+* 2016-07-19: 开始介入react-router
