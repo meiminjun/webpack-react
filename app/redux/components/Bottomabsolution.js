@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default class Bottomabsolution extends React.Component {
       render(){
         return(
