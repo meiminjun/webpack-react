@@ -8,7 +8,7 @@ const config = {
 	entry: [
 		'webpack/hot/dev-server',
 		'webpack-dev-server/client?http://localhost:8080',
-		path.resolve(__dirname, 'app/redux/main.js') // 定义入口文件
+		path.resolve(__dirname, 'app/react-router-redux/main.js') // 定义入口文件
 	],
 	// 出口，定义打包输出的文件；包括路径，文件名，还可能有运行时的访问路径（publicPath）参数
 	output: {
