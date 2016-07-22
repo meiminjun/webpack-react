@@ -1,10 +1,14 @@
-# webpack+react+redux+es6 开发版本
+# [webpack+react+redux+es6 开发版本](https://github.com/meiminjun/webpack-react/tree/react+redux)
 
-到当前目录命令行：npm install   下载依赖包
+> 项目地址：https://github.com/meiminjun/webpack-react/tree/react+redux
 
-windows 开发环境运行: npm run start-win  
+到当前目录命令行：
 
-mac 开发环境运行:npm run start
+> npm install   下载依赖包
+
+开发环境运行:
+
+> npm start
 
 ## 目录结构说明
 
@@ -16,6 +20,8 @@ mac 开发环境运行:npm run start
 ## 添加redux-devtool:
 
 这个插件可以对redux 的state、action可视化查看
+
+笔者直接使用的是chrome扩展redux-devtools
 
 详情请参考：
 
@@ -64,4 +70,4 @@ https://github.com/roadhump/SublimeLinter-eslint
 ## 学习进程：
 * 2016-07-18：已整合好redux
 * 2016-07-19：开始介入react-router
-* 2016-07-21：已经整合好react-router-redux
+* 2016-07-21：已经整合好react-router+redux
