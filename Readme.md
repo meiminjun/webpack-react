@@ -12,10 +12,10 @@
 
 ## 目录结构说明
 
-* app/index:默认用react 编码完成的一个例子
-* app/demo:一个静态样例
-* app/redux:react+redux结合的一个例子
-* app/react-router-redux:添加了react+react-router+redux结合的一个例子
+* app/index：默认用react 编码完成的一个例子
+* app/demo：一个静态样例
+* app/redux：react+redux结合的一个例子
+* app/react-router-redux：添加了react+react-router+redux结合的一个例子
 
 ## 添加redux-devtool:
 
@@ -48,16 +48,15 @@ https://github.com/gaearon/redux-devtools
 SublimeLinter-eslint插件安装(插件官网是没有,需到github下载，放到sulime 的packages文件夹中)：
 
 下载地址：
+
 https://github.com/roadhump/SublimeLinter-eslint
 
 在项目目录需要下载：
 > npm install  babel-eslint eslint eslint-plugin-react --save-dev
 
-在项目根目录添加.eslintrc 和 .babelrc文件
-请参考笔者的配置
+在项目根目录添加.eslintrc 和 .babelrc文件，请参考笔者的配置
 
 参考：http://cheng.logdown.com/posts/2015/09/15/linting-react-jsx-and-es6-javascript-with-eslint
-
 
 ## 参考资料：
 
