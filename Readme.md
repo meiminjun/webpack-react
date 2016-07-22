@@ -6,6 +6,12 @@ windows 开发环境运行: npm run start-win
 
 mac 开发环境运行:npm run start
 
+## 目录结构说明
+
+* app/index:默认用react 编码完成的一个例子
+* app/demo:一个静态样例
+* app/redux:react+redux结合的一个例子
+* app/react-router-redux:添加了react+react-router+redux结合的一个例子
 
 ## 添加redux-devtool:
 
@@ -55,7 +61,7 @@ https://github.com/roadhump/SublimeLinter-eslint
 
 * http://cn.redux.js.org/docs/basics/UsageWithReact.html
 
-
 ## 学习进程：
 * 2016-07-18：已整合好redux
-* 2016-07-19: 开始介入react-router
+* 2016-07-19：开始介入react-router
+* 2016-07-21：已经整合好react-router-redux
