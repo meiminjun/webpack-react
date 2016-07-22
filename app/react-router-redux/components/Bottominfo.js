@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class Bottominfo extends Component {
       render(){
@@ -11,8 +11,8 @@ class Bottominfo extends Component {
               </div>
               <div className="line"></div>
             </div>
-        );
+        )
       }
 }
 
-export default Bottominfo;
+export default Bottominfo
